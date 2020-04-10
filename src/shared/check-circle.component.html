@@ -1,0 +1,10 @@
+<div 
+[title]= "isChecked"
+(click)= onClick()>
+    <div *ngIf="isChecked">
+        <span class="fa fa-check-circle-o"></span>
+    </div>
+    <div *ngIf="!isChecked">
+        <span class="fa fa-circle-o"></span>
+    </div>
+</div>

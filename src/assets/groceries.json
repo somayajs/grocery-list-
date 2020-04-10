@@ -1,0 +1,75 @@
+[
+    {   
+        "groceryID": 1, 
+        "groceryName": "Brocolli",
+        "groceryCode": "BRC-024",
+        "quantity": 2,
+        "price": 5.99,
+        "gotIt": 1,
+        "imageUrl": "assets/images/broccoli.png"    
+    },
+    {
+        "groceryID": 2, 
+        "groceryName": "Slice of Cake",
+        "groceryCode": "SLC-001",
+        "quantity": 6,
+        "price": 1.99,
+        "gotIt": 0,
+        "imageUrl": "assets/images/cake-slice.png"    
+    },
+    {
+        "groceryID": 3, 
+        "groceryName": "Watermelon",
+        "groceryCode": "WTM-102",
+        "quantity": 1,
+        "price": 8.99,
+        "gotIt": 0,
+        "imageUrl": "assets/images/watermelon.png"   
+    },
+    {   
+        "groceryID": 4, 
+        "groceryName": "Baguette",
+        "groceryCode": "BGT-012",
+        "quantity": 2,
+        "price": 5.99,
+        "gotIt": 1,
+        "imageUrl": "assets/images/loaf.png"    
+    },
+    {
+        "groceryID": 5, 
+        "groceryName": "Soy Milk",
+        "groceryCode": "SOY-011",
+        "quantity": 1,
+        "price": 3.99,
+        "gotIt": 0,
+        "imageUrl": "assets/images/milk.png"    
+    },
+    {
+        "groceryID": 6, 
+        "groceryName": "Potatoes",
+        "groceryCode": "POT-343",
+        "quantity": 5,
+        "price": 0.50,
+        "gotIt": 0,
+        "imageUrl": "assets/images/potatoes.png"   
+    },
+    {
+        "groceryID": 7, 
+        "groceryName": "Grapes",
+        "groceryCode": "GPS-343",
+        "quantity": 1,
+        "price": 10.50,
+        "gotIt": 0,
+        "imageUrl": "assets/images/grapes.png"   
+    },
+    {
+        "groceryID": 8, 
+        "groceryName": "Donut",
+        "groceryCode": "DNT-214",
+        "quantity": 12,
+        "price": 0.50,
+        "gotIt": 0,
+        "imageUrl": "assets/images/donut.png"   
+    }
+
+]
