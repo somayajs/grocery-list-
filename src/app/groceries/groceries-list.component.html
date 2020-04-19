@@ -5,17 +5,24 @@
   <div class="card-body">
     <div class="row">
       <div class="col-md-2">Filter by:</div>
-      <div class="col-md-4"><input type="text"></div>
+      <div class="col-md-4">
+        <input type="text" [(ngModel)] = "inputText">
+      </div>
     </div>
     <div class="row">
       <div class="col-md-6">
-        <h4>Filtered by:</h4>
+        <h4>Filtered by: {{inputText}}</h4>
       </div>
       <div class="table-responsive">
         <table class="table" *ngIf="groceries && groceries.length">
           <thead>
             <tr>
-              <th><button class="btn btn-primary">Show Image</button></th>
+              <th>
+                <button
+                  class="btn btn-primary"
+                  (click) ="toggleImage()"
+                >{{showImage? 'Hide' : 'Show'}} Image</button>
+              </th>
               <th>Item</th>
               <th>Code</th>
               <th>Quantity</th>
@@ -25,11 +32,17 @@
           </thead>
           <tbody>
             <tr *ngFor ="let grocery of groceries">
-              <td><img [src] = "grocery.imageUrl" [style.width.px] ="imageWidth" [style.margin.px] = "imageMargin"></td>
+              <td>
+                <img
+                  *ngIf = "showImage"
+                  [src] = "grocery.imageUrl"
+                  [style.width.px] ="imageWidth"
+                  [style.margin.px] = "imageMargin">
+                </td>
               <td>{{grocery.groceryName}}</td>
-              <td>{{grocery.groceryCode}}</td>
+              <td>{{grocery.groceryCode | lowercase}}</td>
               <td>{{grocery.quantity}}</td>
-              <td>{{grocery.price}}</td>
+              <td>{{grocery.price | currency:'CAD'}}</td>
               <td>{{grocery.gotIt}}</td>
             </tr>
           </tbody>
