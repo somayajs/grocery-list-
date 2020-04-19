@@ -12,10 +12,10 @@
         <h4>Filtered by:</h4>
       </div>
       <div class="table-responsive">
-        <table class="table">
+        <table class="table" *ngIf="groceries && groceries.length">
           <thead>
             <tr>
-              <th><button class="btn btn-ptimary">Show Image</button></th>
+              <th><button class="btn btn-primary">Show Image</button></th>
               <th>Item</th>
               <th>Code</th>
               <th>Quantity</th>
@@ -24,13 +24,13 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td></td>
-              <td>Brocolli</td>
-              <td>BRC-024</td>
-              <td>2</td>
-              <td>5.99</td>
-              <td>1</td>
+            <tr *ngFor ="let grocery of groceries">
+              <td><img [src] = "grocery.imageUrl" [style.width.px] ="imageWidth" [style.margin.px] = "imageMargin"></td>
+              <td>{{grocery.groceryName}}</td>
+              <td>{{grocery.groceryCode}}</td>
+              <td>{{grocery.quantity}}</td>
+              <td>{{grocery.price}}</td>
+              <td>{{grocery.gotIt}}</td>
             </tr>
           </tbody>
         </table>
