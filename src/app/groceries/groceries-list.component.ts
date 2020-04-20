@@ -1,7 +1,9 @@
+import { IGrocery } from './grocery';
 import { Component } from '@angular/core';
 @Component({
   selector: "app-groceries",
-  templateUrl: "groceries-list.component.html"
+  templateUrl: "groceries-list.component.html",
+  styleUrls: ["groceries-list.component.css"]
   })
 export class GroceriesListComponent {
   pageTitle: string = 'Grocery List';
@@ -9,7 +11,7 @@ export class GroceriesListComponent {
   imageMargin: number = 2;
   showImage: boolean = false;
   inputText: string;
-  groceries: any[] = [
+  groceries: IGrocery[] = [
     {
       "groceryID": 1,
       "groceryName": "Brocolli",
