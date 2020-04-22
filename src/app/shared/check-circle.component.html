@@ -1,0 +1,12 @@
+<div
+  [title] ="isChecked"
+  (click) = onClick()>
+   <div *ngIf="isChecked">
+    <fa-icon [icon]="faCheckCircle"></fa-icon>
+   </div>
+  <div *ngIf="!isChecked">
+    <fa-icon [icon]="faCircle"></fa-icon>
+  </div>
+</div>
+
+
