@@ -10,7 +10,6 @@ export class CheckCircleComponent {
   faCircle = faCircle;
   @Input() isChecked: boolean;
   onClick() {
-
     this.isChecked = !this.isChecked;
   }
 }
